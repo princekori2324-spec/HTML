@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #acc8e5;
+    text-align: center;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #7df9ff;
+    background: #112a46;
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 3vmin;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg {
+    color: #112a46;
+    font-weight: 700;
+    font-size: 5vmin;
+}
+
+.msg-container {
+    height: 100vmin;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+/* ========= media quaries ========== */
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 1rem;
+    }
+
+    main {
+        padding: 0 0.5rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        height: auto;
+        padding: 0.5rem 0;
+    }
+
+    .game {
+        width: min(95vw, 360px);
+        height: auto;
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .box {
+        width: calc((100% - 2rem) / 3);
+        height: calc((100% - 2rem) / 3);
+        font-size: 10vw;
+        min-width: 80px;
+        min-height: 80px;
+    }
+
+    #reset-btn,
+    #new-btn {
+        width: 100%;
+        max-width: 360px;
+        box-sizing: border-box;
+    }
+
+    main {
+        margin-top: 41vmin;
+    }
+
+    .msg-container {
+        padding: 1rem;
+        gap: 2rem;
+        height: 204vmin;
+    }
+}
